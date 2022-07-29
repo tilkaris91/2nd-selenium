@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="tests">
+  <test thread-count="5" name="facebook">
+<parameter name="url" value="https://www.facebook.com/"></parameter>
+<parameter name="broser" value="webdriver.chrome.driver"></parameter>
+<parameter name="path" value="C:\\Users\\hp\\Downloads\\chromedriver_win32\\chromedriver.exe"></parameter>
+    <classes>
+      <class name="testngdisscusion.ParallelTestTagActual"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test thread-count="5" name="kitezerodha">
+<parameter name="url" value="https://kite.zerodha.com/"></parameter>
+<parameter name="broser" value="webdriver.gecko.driver"></parameter>
+<parameter name="path" value="C:\\Users\\hp\\Downloads\\geckodriver-v0.30.0-win64\\geckodriver.exe"></parameter>
+    <classes>
+      <class name="testngdisscusion.ParallelTestTagActual"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
